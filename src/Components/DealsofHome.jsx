@@ -43,7 +43,7 @@ const Picture = styled.div`
 
     img {
       max-width: 100%;
-      height: 200px; /* Set the fixed height for all images */
+      height: auto /* Set the fixed height for all images */
       transition: transform 0.2s;
       &:hover {
         transform: scale(1.05);
