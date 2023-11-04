@@ -8,39 +8,54 @@ const ProductDetailContainer = styled.div`
   display: flex;
   background-color: white;
   margin: 20px 0;
-
   padding: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const ProductImageContainer = styled.div`
   flex: 1;
   display: flex;
-  background-color:white;
+  background-color: white;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex: none;
+  }
 `;
 
 const ProductImage = styled.img`
   max-width: 400px;
   height: auto;
-  background-color:white;
+  background-color: white;
   margin: 10px 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 const ProductInfoContainer = styled.div`
   flex: 1;
   display: flex;
-  background-color:white;
+  background-color: white;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex: none;
+  }
 `;
 
 const ProductName = styled.h2`
   font-weight: bold;
   font-size: 24px;
-  background-color:white;
+  background-color: white;
   margin: 10px 0;
   background-color: white;
 `;
@@ -49,7 +64,7 @@ const ProductPrice = styled.div`
   font-weight: bold;
   font-size: 18px;
   color: red;
-  background-color:white;
+  background-color: white;
   margin: 10px 0;
   background-color: white;
 `;
@@ -58,7 +73,7 @@ const ProductDescription = styled.p`
   font-size: 16px;
   color: #555;
   text-align: center;
-  background-color:white;
+  background-color: white;
   background-color: white;
 `;
 
