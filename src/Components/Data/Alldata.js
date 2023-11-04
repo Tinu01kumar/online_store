@@ -35,7 +35,7 @@ const alldata=[
 
 
     {
-        id:5,
+        id:22,
         name:"wooden wall shelves",
         imageUrl:"https://m.media-amazon.com/images/I/71Kg7mN2wdL._AC_UL480_FMwebp_QL65_.jpg",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Ald",
@@ -44,7 +44,7 @@ const alldata=[
     },
 
     {
-        id:6,
+        id:23,
         name:"Tree House Nesting Table",
         imageUrl:"https://m.media-amazon.com/images/I/614g7NNxJpL._AC_UL480_FMwebp_QL65_.jpg",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Ald",
@@ -53,7 +53,7 @@ const alldata=[
     },
 
     {
-        id:7,
+        id:24,
         name:"corazzin garden patio",
         imageUrl:"https://m.media-amazon.com/images/I/71eAZ+qqHDL._AC_UL480_FMwebp_QL65_.jpg",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Ald",
@@ -63,7 +63,7 @@ const alldata=[
 
 
     {
-        id:8,
+        id:25,
         name:"Home furniture wooden",
         imageUrl:"https://m.media-amazon.com/images/I/81Zu9uWy4AL._AC_UL480_FMwebp_QL65_.jpg",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Ald",
@@ -73,7 +73,7 @@ const alldata=[
 
 
     {
-        id: 9,
+        id: 31,
         name: "Samsung Galaxy M04 Light",
         imageUrl: "https://m.media-amazon.com/images/I/813sVzTfvaL._AC_UY327_FMwebp_QL65_.jpg",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Ald",
@@ -81,7 +81,7 @@ const alldata=[
         producttype:"electronics",
       },
       {
-        id: 10,
+        id: 32,
         name: "Samsung Galaxy M34 Light",
         imageUrl: "https://m.media-amazon.com/images/I/91L9EF-OEGL._AC_UY327_FMwebp_QL65_.jpg",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Ald",
@@ -89,7 +89,7 @@ const alldata=[
         producttype:"electronics",
       },
       {
-          id:11,
+          id:33,
           name:"realme narzo N53",
           imageUrl:"https://m.media-amazon.com/images/I/71dEY4Neo3L._AC_UY327_FMwebp_QL65_.jpg",
           description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Ald",
@@ -98,7 +98,7 @@ const alldata=[
       }
       ,
       {
-          id:12,
+          id:34,
           name:"iPhone 15 Pro Max",
           imageUrl:"https://m.media-amazon.com/images/I/81dT7CUY6GL._AC_UY327_FMwebp_QL65_.jpg",
           description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Ald",
