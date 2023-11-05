@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import alldata from './Data/Allfurtinureproducts'; // Make sure to import your data
-import Pagination from './Pagination'; // Import the Pagination component
+import Allfurtinureproducts from './Data/Allfurtinureproducts';
+
 import { Link } from 'react-router-dom';
 
 const Mainsection = styled.div`
@@ -49,13 +49,8 @@ const ProductPrice = styled.div`
   background-color: white;
 `;
 
-const ProductDescription = styled.div`
-  color: #555;
-  background-color: white;
-`;
-
 const SortForm = styled.form`
-  margin: 1px 10px;
+  margin: 1px: 10px;
   background-color: white;
 `;
 
@@ -87,11 +82,14 @@ const Sortingsection = styled.div`
   }
 `;
 
+const ItemsPerPage = 8; 
+
 const Allfurtinure = () => {
   const [productType, setProductType] = useState('all');
   const [sortByPrice, setSortByPrice] = useState('default');
+  const [currentPage, setCurrentPage] = useState(1);
 
-  const filteredData = alldata
+  const filteredData = Allfurtinureproducts
     .filter((product) => productType === 'all' || product.type === productType)
     .sort((a, b) => {
       if (sortByPrice === 'lowToHigh') {
@@ -102,39 +100,40 @@ const Allfurtinure = () => {
       return 0;
     });
 
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8;
-  const totalPages = Math.ceil(filteredData.length / itemsPerPage);
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const indexOfLastItem = currentPage * ItemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - ItemsPerPage;
   const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
 
-  const handlePageChange = (selectedPage) => {
-    setCurrentPage(selectedPage);
+  const totalPages = Math.ceil(filteredData.length / ItemsPerPage);
+
+  const handlePageChange = (newPage) => {
+    setCurrentPage(newPage);
   };
 
   return (
     <div>
       <Sortingsection>
-        <h1>Furniture</h1>
+        <h1>Mobile</h1>
         <SortForm>
-          <SortOptions
-            value={productType}
-            onChange={(e) => setProductType(e.target.value)}
-          >
-            <option value="all">All Products</option>
-            <option value="table">Table</option>
-            <option value="wooden">Wooden</option>
-          </SortOptions>
-          <SortOptions
-            value={sortByPrice}
-            onChange={(e) => setSortByPrice(e.target.value)}
-          >
-            <option value="default">Sort by Price</option>
-            <option value="lowToHigh">Price: Low to High</option>
-            <option value="highToLow">Price: High To Low</option>
-          </SortOptions>
-        </SortForm>
+        <SortOptions
+          value={productType}
+          onChange={(e) => setProductType(e.target.value)}
+        >
+          <option value="all">All Products</option>
+          <option value="table">Table</option>
+          <option value="wooden">Wooden</option>
+        </SortOptions>
+      
+        <SortOptions
+          value={sortByPrice}
+          onChange={(e) => setSortByPrice(e.target.value)}
+        >
+          <option value="default">Sort by Price</option>
+          <option value="lowToHigh">Price: Low to High</option>
+          <option value="highToLow">Price: High To Low</option>
+        </SortOptions>
+      </SortForm>
+      
       </Sortingsection>
 
       <Mainsection>
@@ -159,5 +158,52 @@ const Allfurtinure = () => {
     </div>
   );
 };
+
+const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+  const pageNumbers = [];
+
+  for (let i = 1; i <= totalPages; i++) {
+    pageNumbers.push(i);
+  }
+
+  return (
+    <PaginationContainer>
+      {pageNumbers.map((number) => (
+        <PaginationButton
+          key={number}
+          onClick={() => onPageChange(number)}
+          currentPage={currentPage}
+        >
+          {number}
+        </PaginationButton>
+   ) )}
+    </PaginationContainer>
+  );
+};
+
+const PaginationContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+`;
+
+const PaginationButton = styled.button`
+  background-color: ${(props) =>
+    props.currentPage === props.children ? 'red' : 'white'};
+  color: ${(props) => (props.currentPage === props.children ? 'white' : 'black')};
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: red;
+    color: white;
+  }
+`;
 
 export default Allfurtinure;
