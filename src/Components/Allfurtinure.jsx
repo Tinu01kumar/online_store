@@ -113,7 +113,7 @@ const Allfurtinure = () => {
   return (
     <div>
       <Sortingsection>
-        <h1>Mobile</h1>
+        <h1>Furniture</h1>
         <SortForm>
         <SortOptions
           value={productType}
